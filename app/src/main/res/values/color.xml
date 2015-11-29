@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Color primary 500 from palette colors -->
+    <color name="primary">#03A9F4</color>
+    <!--Color primary dark 700 from palette colors -->
+    <color name="primaryDark">#0288D1</color>
+    <color name="accent">#5a2bc3</color>
+    <color name="grey_60alpha">#a9a9a9</color>
+    <color name="red_300">#8b0000</color>
+    <color name="purple_300">#9370db</color>
+    <color name="blue_grey_300">#f0f8ff</color>
+    <color name="brown_300">#f4a460</color>
+</resources>

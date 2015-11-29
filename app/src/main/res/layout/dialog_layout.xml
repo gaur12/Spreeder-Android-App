@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <!-- <EditText xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="60sp"
+        android:id="@+id/new_text"
+        android:inputType="textMultiLine"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:gravity="center_vertical"
+        android:layout_marginStart="?android:attr/listPreferredItemPaddingStart"
+        android:layout_marginEnd="?android:attr/listPreferredItemPaddingEnd"
+       />
+  -->    <android.support.design.widget.TextInputLayout style="@style/text_input_layout_style">
+
+            <EditText xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/new_text"
+                android:layout_width="fill_parent"
+                android:layout_height="60sp"
+                android:inputType="textMultiLine"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:gravity="center_vertical"
+                android:layout_marginStart="?android:attr/listPreferredItemPaddingStart"
+                android:layout_marginEnd="?android:attr/listPreferredItemPaddingEnd"
+                android:hint="Add New Passage"
+                />
+        </android.support.design.widget.TextInputLayout>
+

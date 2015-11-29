@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context="com.example.user.spreeder.Settings">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20sp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Words Per Minute"
+                    android:paddingRight="10sp"
+                    android:layout_marginEnd="3sp"
+                    android:layout_marginRight="35sp"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginStart="50sp"/>
+
+                <EditText
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:padding="10sp"
+                    android:id="@+id/speed_input"
+                    android:layout_marginEnd="50sp"
+                    android:layout_marginRight="50sp"
+                    android:maxLength="3"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chunk Size(Words)"
+                    android:layout_marginEnd="35sp"
+                    android:layout_marginRight="35sp"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginStart="50sp"/>
+
+                <EditText
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:padding="10sp"
+                    android:id="@+id/chunk_input"
+                    android:layout_marginEnd="50sp"
+                    android:layout_marginRight="50sp"
+                    android:maxLength="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Font Size"
+                    android:layout_marginEnd="95sp"
+                    android:layout_marginRight="95sp"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginStart="50sp"/>
+
+                <EditText
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:text="30"
+                    android:padding="10sp"
+                    android:id="@+id/text_size_input"
+                    android:maxLength="2"
+                    android:layout_marginEnd="50sp"
+                    android:layout_marginRight="50sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Font Color"
+                    android:layout_marginEnd="90sp"
+                    android:layout_marginRight="90sp"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginStart="50sp"
+                    android:layout_marginBottom="20sp"/>
+
+                <Button
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:id="@+id/fColor"
+                    android:layout_marginStart="20sp"
+                    android:onClick="onClickTextColorPickerDialog"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Background Color"
+                    android:layout_marginEnd="40sp"
+                    android:layout_marginRight="40sp"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginStart="50sp"/>
+                <Button
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:id="@+id/bColor"
+                    android:layout_marginStart="23sp"
+                    android:onClick="onClickBackgroundColorPickerDialog"/>
+            </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:text="Save"
+                android:textColor="@color/grey_60alpha"
+                android:background="@color/primary"
+                android:layout_marginTop="30sp"
+                android:layout_marginStart="80sp"
+                android:onClick="doSave"
+                />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:text="Cancel"
+            android:textColor="@color/grey_60alpha"
+            android:background="@color/primary"
+            android:layout_marginTop="30sp"
+            android:layout_marginStart="40sp"
+            android:onClick="doCancel"
+            />
+    </LinearLayout>
+        </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
